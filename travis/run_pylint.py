@@ -70,9 +70,6 @@ def get_extra_params(odoo_version):
         '--extra-params', '--load-plugins=pylint_odoo']
 
     extra_params = list(extra_params_cmd)
-    if is_version_number:
-        extra_params.extend([
-            '--extra-params', '--valid_odoo_versions=%s' % odoo_version])
 
     odoo_version = odoo_version.replace('.', '')
     version_cfg = os.path.join(

@@ -3,7 +3,7 @@
 set -e
 
 if [ "${LINT_CHECK}" != "0" ]; then
-    pip install -Uq flake8=="3.4.1" Click pylint-mccabe pbr
+    pip install -Uq flake8=="3.8.2" Click pylint-mccabe pbr
 
     # Install pylint plugin depends without lxml
     # The 7.0.4 tag is used here because the master branch contains
